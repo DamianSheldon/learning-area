@@ -1,11 +1,12 @@
-#Marking guide for "Marking up a letter"
+# Marking guide for "Marking up a letter"
+
 The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Marking up a letter](https://developer.mozilla.org/en-US/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth, and the mark breakdown.
 
 Note: These are guidelines, not set in stone rules — you are of course free to use your judgement on mark awarding when you meet an edge case, or somethign that isn't clearly cut.
 
-The overall mark awarded is out of 47. Work out their final mark, and then divide by 47 and multiply by 100 to give a percentage mark. For reference, you can find a [finished marked up letter](index.html) that would be awarded top marks. 
+The overall mark awarded is out of 47. Work out their final mark, and then divide by 47 and multiply by 100 to give a percentage mark. For reference, you can find a [finished marked up letter](index.html) that would be awarded top marks.
 
-##Block/structural semantics
+## Block/structural semantics
 
 <dl>
 <dt>You should structure the overall document with an appropriate structure including doctype, and &lt;html&gt;, &lt;head&gt; and &lt;body&gt; elements (5 marks)</dt>
@@ -34,19 +35,19 @@ The overall mark awarded is out of 47. Work out their final mark, and then divid
   <li>Mark up the exotic dances as a description list (&lt;dl&gt;/&lt;dd&gt;/&lt;dt&gt;) (2 marks)</li>
 </ul>
 </dd>
-<dt>The two addresses. Each line of the address should sit on a new line, but not be in a new paragraph (3 marks)</dt>
-<dd>Wrap both of the addresses in an &lt;address&gt; element, and put a &lt;br&gt; element at the end of each line of the address, except for the last line in each case</dd>
+<dt>The two addresses can just be put inside paragraphs; each line of the address should sit on a new line, but not be in a new paragraph. (3 marks)</dt>
+<dd>Wrap both of the addresses in an &lt;p&gt; element, and put a &lt;br&gt; element at the end of each line of the address, except for the last line in each case.</dd>
 </dl>
 
-##Inline semantics
+## Inline semantics
 
 <dl>
 <dt>The names of the sender and receiver (and "Tel" and "Email") should be marked up with strong importance (2 marks, half a mark each)</dt>
 <dd>"Dr. Eleanor Gaye", "Miss Eileen Dover", "Tel", and "Email" should be wrapped in a &lt;strong&gt; element.</dd>
 <dt>The four dates in the document should be given appropriate elements containing machine-readable dates (2 marks, half a mark each)</dt>
 <dd>All four dates should be marked up using a &lt;time&gt; element. Each one should have a datetime attribute containing a machine readable date. For example &lt;time datetime="2016-01-20"&gt;20 January 2016&lt;/time&gt;</dd>
-<dt>The first address and first date in the letter should be given a class attribute value of "right"; the CSS you'll add later will then cause these to be right aligned, as should be the case in a classic letter layout. (2 marks)</dt>
-<dd>The first &lt;address&gt; element in the document should be given an attribute of class="right"; the first date should be wrapped in a &lt;p&gt;, which should also be given the class="right" attribute.</dd>
+<dt>The first address and first date in the letter should be given a class attribute value of "receiver-column"; the CSS you'll add later will then cause these to be right aligned, as should be the case in a classic letter layout. (2 marks)</dt>
+<dd>The first &lt;p&gt; element in the document should be given an attribute of class="receiver-column"; the first date should be wrapped in a &lt;p&gt;, which should also be given the class="receiver-column" attribute.</dd>
 <dt>The five acronyms/abbreviations in the main text of the letter should be marked up to provide expansions of each acronym/abbreviation. (2.5 marks, half a mark each)</dt>
 <dd>Each acronym/abbreviation in the main text of the letter — "PhD", "HTML", "CSS", "BC" and "Esq" — should be wrapped in an &lt;abbr&gt; element with a title attribute, for example &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt;</dd>
 <dt>The six sub/superscripts should be marked up appropriately (3 marks, half a mark each).</dt>
@@ -73,7 +74,7 @@ The overall mark awarded is out of 47. Work out their final mark, and then divid
 <dd>"Be excellent to each other" should be wrapped in a &lt;q&gt; element, and "Bill S Preston, Esq" should be wrapped in a &lt;cite&gt; element</dd>
 </dl>
 
-##The head of the document
+## The head of the document
 
 <dl>
   <dt>The character set of the document should be specified as utf-8 using an appropriate meta tag (1 mark)</dt>
@@ -84,7 +85,7 @@ The overall mark awarded is out of 47. Work out their final mark, and then divid
   <dd>The CSS from the provided CSS file should be pasted inside a &lt;style&gt; element, included inside the &lt;head&gt; element. OR, it would also be acceptable (in fact better) if the student put the CSS inside an external CSS file and linked it via a &lt;link&gt; element.</dd>
 </dl>
 
-##Other tasks
+## Other tasks
 
 <dl>
 <dt>You'll get bonus points if it validates as much as possible (2 marks.)</dt>
