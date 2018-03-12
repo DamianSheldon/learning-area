@@ -15,13 +15,13 @@ function random(min,max) {
 
 // define Ball constructor
 
-function Ball() {
-  this.x = random(0,width);
-  this.y = random(0,height);
-  this.velX = random(-7,7);
-  this.velY = random(-7,7);
-  this.color = 'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')';
-  this.size = random(10,20);
+function Ball(x, y, velX, velY, color, size) {
+  this.x = x;
+  this.y = y;
+  this.velX = velX;
+  this.velY = velY;
+  this.color = color;
+  this.size = size;
 }
 
 // define ball draw method
@@ -59,7 +59,7 @@ Ball.prototype.update = function() {
 // define ball collision detection
 
 Ball.prototype.collisionDetect = function() {
-  for(j = 0; j < balls.length; j++) {
+  for(var j = 0; j < balls.length; j++) {
     if(!(this === balls[j])) {
       var dx = this.x - balls[j].x;
       var dy = this.y - balls[j].y;
@@ -83,11 +83,18 @@ function loop() {
   ctx.fillRect(0,0,width,height);
 
   while(balls.length < 25) {
-    var ball = new Ball();
+    var ball = new Ball(
+      random(0,width),
+      random(0,height),
+      random(-7,7),
+      random(-7,7),
+      'rgb(' + random(0,255) + ',' + random(0,255) + ',' + random(0,255) +')',
+      random(10,20)
+    );
     balls.push(ball);
   }
 
-  for(i = 0; i < balls.length; i++) {
+  for(var i = 0; i < balls.length; i++) {
     balls[i].draw();
     balls[i].update();
     balls[i].collisionDetect();

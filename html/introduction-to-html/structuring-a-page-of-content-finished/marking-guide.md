@@ -1,6 +1,6 @@
 # Marking guide for "Structuring a page of content"
 
-The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Structring a page of content](https://developer.mozilla.org/en-US/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth.
+The following guide outlines a marking guide for the MDN Learning Area HTML Topic — [Structuring a page of content](https://developer.mozilla.org/en-US/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content). Each subtask detailed in the assessment is listed below, along with an explanation of how many marks the task is worth.
 
 Note: These are guidelines, not set in stone rules — you are of course free to use your judgement on mark awarding when you meet an edge case, or something that isn't clearly cut.
 
@@ -10,7 +10,7 @@ The overall mark awarded is out of 30. Work out their final mark, and then divid
 
 <dl>
 <dt>The header (4 marks.)</dt>
-<dd>They need to wrap the &lt;h1&gt;, first &lt;img&gt; and whole of the &lt;ul&gt; in a &lt;heading&gt; element.</dd>
+<dd>They need to wrap the &lt;h1&gt;, first &lt;img&gt; and whole of the &lt;ul&gt; in a &lt;header&gt; element.</dd>
 <dt>The navigation menu (4 marks.)</dt>
 <dd>They need to wrap the &lt;ul&gt; in a &lt;nav&gt; element.</dd>
 <dt>The main content (4 marks.)</dt>
