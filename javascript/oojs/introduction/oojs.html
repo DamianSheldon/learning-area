@@ -10,6 +10,59 @@
   </body>
 
     <script>
-      
+        // Object literal
+        var person1 = {
+            name: ['Bob', 'Smith'],
+            age: 32,
+            gender: 'male',
+            interests: ['music', 'skiing'],
+            bio: function(){
+                alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + this.interests[1] + '.');
+            },
+            greeting: function(){
+                alert('Hi! I\'m ' + this.name[0] + '.');
+            },
+        };        
+
+        // Constructor function
+        function Person(first, last, age, gender, interests) {
+            this.name = {
+                'first': first,
+                'last': last
+            };
+
+            this.age = age;
+            this.gender = gender;
+            this.interests = interests;
+            this.bio = function() {
+                alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + this.interests[1] + '.');
+            };
+
+            this.greeting = function() {
+                alert('Hi! I\'m ' + this.name[0] + '.');
+            };
+        }
+        
+        var person2 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+
+        // The Object() constructor
+        var person3_0 = new Object();
+        person3_0.name = 'Chris';
+        person3_0['age'] = 38;
+        person3_0.greeting = function() {
+            alert('Hi! I\'m ' + this.name + '.');
+        };
+
+        var person3_1 = new Object({
+            name: 'Bob',
+            age: 38,
+            greeting: function() {
+                alert('Hi! I\'m ' + this.name + '.');
+            },
+        });
+
+        // Use the create() method
+        var person4 = Object.create(person1);
+
     </script>
 </html>
