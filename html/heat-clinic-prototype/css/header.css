@@ -1,0 +1,35 @@
+.navbar .search-form input {
+    width: 200px !important;
+}
+
+.navbar .search-form button {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar .navbar-form .form-group {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    padding: 0 10%;
+    width: 100%;
+}
+
+.navbar-left {
+    float: left!important;
+}
+
+.navbar-right {
+    float: right!important;
+}
+
+.nav > li {
+    display: inline-block;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
