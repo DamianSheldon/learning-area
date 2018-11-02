@@ -15,6 +15,8 @@
 .nav-wrapper {
     padding: 0 10%;
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
 
 .navbar-left {
@@ -27,9 +29,51 @@
 
 .nav > li {
     display: inline-block;
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.navbar .brand-logo {
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* content: url(/img/the-heat-clinic-logo-internal.png); */
+    width: 120px;
+    transform: scale(1.92);
+    transition: all .4s ease-in-out;
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    margin-top: 15px;
+}
+
+.navbar .main-menu-wrapper {
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    border-top: 1px solid #ccc;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar .main-menu {
+    margin: 0 auto auto;
+    display: block;
+}
+
+.navbar .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #555555;
 }
