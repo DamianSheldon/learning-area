@@ -1,0 +1,17 @@
+.blc-brand {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blc-brand p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 1em;
+}
+
+.btn.btn-facebook.btn-link {
+    color: #3b5998;
+    background-color: transparent;
+    box-shadow: none;
+}
