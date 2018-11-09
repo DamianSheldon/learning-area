@@ -5,6 +5,23 @@
     padding-right: 10%;
 }
 
+.brand-logo {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 120px;
+    transform: scale(1.92);
+    transition: all .4s ease-in-out;
+}
+
+.header-logo {
+    left: 0;
+    right: 0;
+    top: 20px;
+    text-align: center;
+}
+
+/* ------------end-------------- */
+
 .navbar .search-form input {
     width: 200px !important;
 }
@@ -41,24 +58,6 @@
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.navbar .brand-logo {
-    display: block;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* content: url(/img/the-heat-clinic-logo-internal.png); */
-    width: 120px;
-    transform: scale(1.92);
-    transition: all .4s ease-in-out;
-}
-
-.header-logo {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
-    margin-top: 15px;
 }
 
 .navbar .main-menu-wrapper {
