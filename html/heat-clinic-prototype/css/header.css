@@ -1,3 +1,10 @@
+/* Navigation bar */
+
+.px-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .navbar .search-form input {
     width: 200px !important;
 }
