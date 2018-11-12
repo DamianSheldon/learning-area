@@ -10,8 +10,38 @@
     padding-top: 1em;
 }
 
-.btn.btn-facebook.btn-link {
+.btn-facebook {
     color: #3b5998;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-instagram {
+    color: #125688;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-google {
+    color: #dd4b39;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-linkedin {
+    color: #0976b4;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-twitter {
+    color: #55acee;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-youtube {
+    color: #e52d27;
     background-color: transparent;
     box-shadow: none;
 }
