@@ -1,10 +1,6 @@
 .main {
-    margin-top: 146px;
+    padding-top: 146px;
     min-height: 650px;
-}
-
-.full-width {
-    width: 100%;
 }
 
 .card-img-top img {
