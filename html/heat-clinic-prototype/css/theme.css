@@ -1,3 +1,13 @@
 .hc-brand-color {
     color: #E40037;
 }
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #999999;
+}
+
+.btn-brand {
+    background-color: #E40037;
+    color: #FFFFFF;
+}
