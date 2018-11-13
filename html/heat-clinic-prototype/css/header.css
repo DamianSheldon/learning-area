@@ -23,3 +23,14 @@
 header.small-header .brand-logo {
     transform: scale(1);
 }
+
+.mini-cart-item .img-container img {
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+}
+
+.mini-cart-item .mini-cart-item-name {
+    width: 17em;
+    white-space: normal;
+}

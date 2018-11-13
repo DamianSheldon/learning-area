@@ -62,8 +62,68 @@
                         </a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-body" href="#">Shopping Cart</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hc-brand-color" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right px-2">
+                        <li class="dropdown-item px-0">
+                            <div class="d-flex mini-cart-item">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <img src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Hoppin's Hot Sauce">
+                                    </a>
+                                </div>
+                                <div class="mini-cart-item-info pl-2">
+                                    <div class="mini-cart-item-name">
+                                        <span>Hoppin's Hot Sauce</span>
+                                    </div>
+                                    <ul class="product-option-list"></ul>
+                                    <span class="mini-cart-item-price">$4.99</span>
+                                    <span class="mini-cart-item-quantity">x 1</span>
+                                    <ul class="mini-cart-item-actions list-unstyled pl-0">
+                                        <li>
+                                            <a class="btn text-body text-uppercase" href="#">Remove</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <div class="d-flex mini-cart-item">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <img src="img/Day-of-the-Dead-Scotch-Bonnet-Hot-Sauce-Bottle.jpg" alt="Day of the Dead Scotch Bonnet Hot Sauce">
+                                    </a>
+                                </div>
+                                <div class="mini-cart-item-info pl-2">
+                                    <div class="mini-cart-item-name">
+                                        <span>Day of the Dead Scotch Bonnet Hot Sauce</span>
+                                    </div>
+                                    <ul class="product-option-list"></ul>
+                                    <span class="mini-cart-item-price">$6.99</span>
+                                    <span class="mini-cart-item-quantity">x 1</span>
+                                    <ul class="mini-cart-item-actions list-unstyled pl-0">
+                                        <li>
+                                            <a class="btn text-body text-uppercase" href="#">Remove</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <div class="mini-cart-subtotal text-center text-uppercase border-top border-bottom py-4">
+                                <span>subtotal:</span>
+                                <span>$11.98</span>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <a class="d-block btn btn-brand text-uppercase" href="#">View Your Cart</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -335,6 +395,6 @@
     <script src="frameworks/bootstrap/bootstrap.bundle.js"></script> 
 
     <script src="js/globalOnReadyEventHandlers.js"></script>
-    
+
 </body>
 </html>
