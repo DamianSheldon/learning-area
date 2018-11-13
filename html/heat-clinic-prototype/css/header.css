@@ -19,3 +19,7 @@
     transform: translateX(-50%);
     text-align: center;
 }
+
+header.small-header .brand-logo {
+    transform: scale(1);
+}
