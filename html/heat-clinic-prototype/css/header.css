@@ -34,3 +34,7 @@ header.small-header .brand-logo {
     width: 17em;
     white-space: normal;
 }
+
+.caret-off::after {
+    display: none;
+}
