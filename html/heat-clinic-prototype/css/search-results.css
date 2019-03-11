@@ -2,3 +2,24 @@
     right: 0;
     bottom: 0;
 }
+
+.absolute-align-right-vertical-center {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel a[aria-expanded="true"] i {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.panel i {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
