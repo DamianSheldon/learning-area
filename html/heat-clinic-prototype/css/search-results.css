@@ -11,12 +11,20 @@
     transform: translateY(-50%);
 }
 
+.section-title {
+    margin-top: 20px;
+}
+
 /* Element size */
 
 /* Font size */
 
 .fz-1rem {
     font-size: 1rem;
+}
+
+.small-text {
+    font-size: small;
 }
 
 /* Color */
