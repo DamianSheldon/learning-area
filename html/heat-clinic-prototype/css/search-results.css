@@ -20,6 +20,11 @@
     padding-bottom: .5em;
 }
 
+.filter-heading {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
 /* Custome component */
 
 .card-plain {
@@ -52,23 +57,20 @@
 }
 
 /* Color */
-.panel a {
-    color: #3C4858;
-}
 
-.panel a[aria-expanded="true"] {
+.filter a[aria-expanded="true"] {
     color: #E40037;
 }
 
 /* Animation */
-.panel a[aria-expanded="true"] i {
+.filter a[aria-expanded="true"] i {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.panel i {
+.filter i {
     -webkit-transition: all 150ms ease 0s;
     -moz-transition: all 150ms ease 0s;
     -o-transition: all 150ms ease 0s;
