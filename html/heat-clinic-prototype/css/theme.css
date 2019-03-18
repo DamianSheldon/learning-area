@@ -27,3 +27,13 @@ a:hover.default-link {
     color: #E40037;
     text-decoration: none;
 }
+
+a.brand-color-link {
+    color: #E40037;
+    vertical-align: middle;
+}
+
+a.brand-color-link:hover, a.brand-color-link:focus {
+    color: #3E0000;
+    text-decoration: none;
+}
