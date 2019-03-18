@@ -15,3 +15,15 @@
 .bg-footer {
     background-color: #E5E5E5;
 }
+
+/* element.class selects all elements with that class
+   .class element selects all elements that are descendants of elements that have that class.
+*/
+a.default-link {
+    color: #3C4858;
+}
+
+a:hover.default-link {
+    color: #E40037;
+    text-decoration: none;
+}
