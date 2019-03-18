@@ -16,6 +16,30 @@
 }
 
 /* Element size */
+.sort {
+    padding-bottom: .5em;
+}
+
+/* Custome component */
+
+.card-plain {
+    border: 0;
+    padding-bottom: 30px;
+}
+
+.card-content {
+    padding: 15px 5px 0;
+}
+
+.dropdown-toggle-override {
+    color: #E40037;
+    vertical-align: middle;
+}
+
+.dropdown-toggle-override:hover, .dropdown-toggle-override:focus {
+    color: #3E0000;
+    text-decoration: none;
+}
 
 /* Font size */
 
