@@ -10,12 +10,25 @@
     text-align: center;
 }
 
-.product-list-item .btn-quickview, .product-list-item .btn-add-to-cart {
+.translateY-150 {
     transform: translateY(-150%);
-    margin: 0 0.5em;
-    visibility: hidden;
 }
 
-.product-list-item:hover .btn-quickview, .product-list-item:hover .btn-add-to-cart {
-    visibility: visible;
+.product-list-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-style: none;
+}
+
+.product-list-item:hover .invisible {
+    visibility: visible !important;
+}
+
+.product-actions {
+    padding: 0 !important;
+    border-top: 0 !important;
+    background-color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

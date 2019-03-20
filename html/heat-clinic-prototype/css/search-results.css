@@ -11,10 +11,6 @@
     transform: translateY(-50%);
 }
 
-.translateY-150 {
-    transform: translateY(-150%);
-}
-
 .section-title {
     margin-top: 20px;
 }
@@ -27,21 +23,6 @@
 .filter-heading {
     display: flex;
     border-bottom: 1px solid #ddd;
-}
-
-.product-list-item {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-style: none;
-}
-
-.product-actions {
-    padding: 0 !important;
-    border-top: 0 !important;
-    background-color: #fff !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .page-black-link {
@@ -74,10 +55,6 @@
 }
 
 /* Visibility */
-
-.product-list-item:hover .invisible {
-    visibility: visible !important;
-}
 
 /* Font size */
 
