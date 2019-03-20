@@ -44,6 +44,24 @@
     align-items: center;
 }
 
+.page-black-link {
+    margin: 0 3px;
+    color: black;
+    border: 1px solid;
+    border-radius: 0.25rem;
+}
+
+.page-item.active .page-black-link {
+    background-color: black;
+    color: white;
+}
+
+.page-link:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: black;
+}
+
 /* Custome component */
 
 .card-plain {
