@@ -2,3 +2,34 @@
     padding-top: 2em;
     background-color: white;
 }
+
+.featured-product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0;
+}
+
+.price {
+    color: #3C4858;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.btn-more {
+    background-color: #999999;
+    color: #FFFFFF;
+}
+
+.card-blog {
+    margin: 30px 0;
+    box-shadow: 0 12px 34px -12px rgba(0, 0, 0, 0.4), 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-wrapper {
+    margin: -30px 15px 0;
+}
+
+.related-products .title {
+    margin: 20px 0 30px;
+}
