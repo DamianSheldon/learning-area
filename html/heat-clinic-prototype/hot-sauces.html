@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tenne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="frameworks/bootstrap/bootstrap.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="frameworks/material-kit/css/material-kit.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/theme.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/search-results.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" /> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
+
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <header class="fixed-top bg-white border-bottom">
+        <nav class="navbar navbar-expand-lg mt-3 px-10">
+            <form action="#" method="POST" class="form-inline mr-auto">
+                <div class="input-group">
+                    <div class="form-group">
+                        <input type="search" class="form-control" name="q" autocomplete="off" placeholder="search">
+                    </div>
+                    <button type="submit" class="btn btn-link hc-brand-color">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="login.html">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hc-brand-color caret-off" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/flags/United-States.png" alt="United States" title="English">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">
+                            <img src="img/flags/United-States.png" alt="United States" title="English"> English
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/flags/United-Kingdom.png" alt="United Kingdom" title="English (UK)"> English (UK)
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/flags/Mexico.png" alt="Mexico" title="Spanish (Mexico)"> Spanish (Mexico)
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/flags/Spain.png" alt="Spain" title="Spainish (Spain)"> Spainish (Spain)
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <img src="img/flags/France.png" alt="France" title="Franch (France)"> Franch (France)
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hc-brand-color caret-off" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-shopping-cart align-middle text-dark"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right px-2">
+                        <li class="dropdown-item px-0">
+                            <div class="d-flex mini-cart-item">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <img src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Hoppin's Hot Sauce">
+                                    </a>
+                                </div>
+                                <div class="mini-cart-item-info pl-2">
+                                    <div class="mini-cart-item-name">
+                                        <span>Hoppin's Hot Sauce</span>
+                                    </div>
+                                    <ul class="product-option-list"></ul>
+                                    <span class="mini-cart-item-price">$4.99</span>
+                                    <span class="mini-cart-item-quantity">x 1</span>
+                                    <ul class="mini-cart-item-actions list-unstyled pl-0">
+                                        <li>
+                                            <a class="btn text-body text-uppercase" href="#">Remove</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <div class="d-flex mini-cart-item">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <img src="img/Day-of-the-Dead-Scotch-Bonnet-Hot-Sauce-Bottle.jpg" alt="Day of the Dead Scotch Bonnet Hot Sauce">
+                                    </a>
+                                </div>
+                                <div class="mini-cart-item-info pl-2">
+                                    <div class="mini-cart-item-name">
+                                        <span>Day of the Dead Scotch Bonnet Hot Sauce</span>
+                                    </div>
+                                    <ul class="product-option-list"></ul>
+                                    <span class="mini-cart-item-price">$6.99</span>
+                                    <span class="mini-cart-item-quantity">x 1</span>
+                                    <ul class="mini-cart-item-actions list-unstyled pl-0">
+                                        <li>
+                                            <a class="btn text-body text-uppercase" href="#">Remove</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <div class="mini-cart-subtotal text-center text-uppercase border-top border-bottom py-4">
+                                <span>subtotal:</span>
+                                <span>$11.98</span>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item px-0">
+                            <a class="d-block btn btn-brand text-uppercase" href="#">View Your Cart</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="position-absolute header-logo">
+            <img class="brand-logo" src="img/the-heat-clinic-logo-internal.png" alt="The Heat Clinic Home" />
+        </div>
+        
+        <ul class="nav justify-content-center text-uppercase border-top">
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">Hot Sauces</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">Merchandise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-body" href="#">Clearance</a>
+                </li>
+            </ul>
+
+    </header>
+
+    <main class="main">
+        
+        <div class="container">
+        
+            <div id="category-search-title" class="border-bottom">
+                <h2 class="section-title">
+                    <span>Search Results</span>
+                </h2>
+                <div class="position-relative">
+                    <span class="position-absolute right-bottom small-text">(1-15 of 18)</span>
+                </div>
+            </div>
+        
+            <div id="category-search-content" class="row">
+            
+                <div id="left_column" class="col-md-3">
+            
+                    <div class="card card-plain">
+                        <div class="card-body card-content">
+                            <div id="sort" class="sort">
+                                <span class="d-inline-block align-middle title"> 
+                                    <h4 class="mt-2">Sort by:</h4>
+                                </span>
+            
+                                <div class="d-inline-block align-middle dropdown">
+                                    <a class="dropdown-toggle brand-color-link" href="#" role="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Best Match
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Price:Low to High</a>
+                                        <a class="dropdown-item" href="#">Price:Hign to Low</a>
+                                        <a class="dropdown-item" href="#">Name:A to Z</a>
+                                        <a class="dropdown-item" href="#">Name:Z to A</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <h4>Filter your results</h4>
+            
+                            <div class="filter">
+                                <a class="filter-heading default-link" data-toggle="collapse" href="#collapse0" role="button"
+                                    aria-expanded="false" aria-controls="collapse0">
+                                    <h4 class="flex-grow-1 mb-0">
+                                        <span class="align-middle fz-1rem">Manufacturer</span>
+                                    </h4>
+            
+                                    <div>
+                                        <i class="fas fa-angle-down align-middle"></i>
+                                    </div>
+            
+                                </a>
+                                <div class="collapse" id="collapse0">
+                                    <div class="filter-body">
+                                        <!-- Active facet values -->
+            
+            
+                                        <!-- Inactive facet valuess -->
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Blair%27s" id="mfg-Blair%27s">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Blair's (2)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Brazos+Legends" id="mfg-Brazos+Legends">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Brazos Legends (2)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=D.+L.+Jardine%27s" id="mfg-D.+L.+Jardine%27s">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>D. L. Jardine's (1)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Dave%27s+Gourmet" id="mfg-Dave%27s+Gourmet">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Dave's Gourmet (6)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Figueroa+Brothers" id="mfg-Figueroa+Brothers">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Figueroa Brothers (2)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Garden+Row" id="mfg-Garden+Row">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Garden Row (1)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Salsa+Express" id="mfg-Salsa+Express">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Salsa Express (1)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="mfg=Spice+Exchange" id="mfg-Spice+Exchange">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+                                                <small>Spice Exchange (3)</small>
+            
+            
+                                            </label>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="filter pt-4">
+                                <a class="filter-heading default-link" data-toggle="collapse" href="#collapse1" role="button"
+                                    aria-expanded="false" aria-controls="collapse1">
+                                    <h4 class="flex-grow-1 mb-0">
+                                        <span class="align-middle fz-1rem">Price</span>
+                                    </h4>
+            
+                                    <div>
+                                        <i class="fas fa-angle-down align-middle"></i>
+                                    </div>
+            
+                                </a>
+            
+                                <div class="collapse" id="collapse1">
+                                    <div class="filter-body">
+                                        <!-- Active facet values -->
+            
+            
+                                        <!-- Inactive facet valuess -->
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="price=range%5B0.00000%3A5.00000%5D" id="price-range%5B0.00000%3A5.00000%5D">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+            
+                                                $0.00 - $5.00
+            
+                                                <small>(8)</small>
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="price=range%5B5.00000%3A10.00000%5D" id="price-range%5B5.00000%3A10.00000%5D">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+            
+                                                $5.00 - $10.00
+            
+                                                <small>(6)</small>
+            
+                                            </label>
+                                        </div>
+            
+                                        <div class="checkbox">
+                                            <!-- Facet Value display fragment -->
+                                            <label>
+                                                <input type="checkbox" name="price=range%5B10.00000%3A15.00000%5D" id="price-range%5B10.00000%3A15.00000%5D">
+                                                <span class="checkbox-material">
+                                                    <span class="check"></span>
+                                                </span>
+            
+            
+                                                $10.00 - $15.00
+            
+                                                <small>(4)</small>
+            
+                                            </label>
+                                        </div>
+            
+            
+            
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div id="right_column" class="col-md-9">
+                
+                    <div id="products" class="row">
+                    
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    
+                        <div class="col-md-4">
+                            <div class="card product-list-item">
+                                <img class="card-img-top rounded-bottom" src="img/Hoppin-Hot-Sauce-Bottle.jpg" alt="Sauce Image">
+                                <div class="position-relative">
+                                    <div class="cntr-abs-horz">
+                                        <!-- Quick View Button -->
+                                        <button class="btn btn-sm btn-white d-inline-block translateY-150 invisible mx-2">Quick View</button>
+                    
+                                        <!-- Add to Cart Button -->
+                                        <div class="d-inline-block translateY-150 invisible mx-2">
+                                            <form action="/cart/add" method="POST">
+                                                <button class="btn btn-sm btn-brand">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body px-1 py-3">
+                                    <h5 class="card-title text-center">
+                                        <a class="text-dark" href="/hot-sauces/hoppin_hot_sauce">Hoppin' Hot Sauce</a>
+                                    </h5>
+                                    <div class="card-footer product-actions">
+                                        <div class="product-price-container">
+                                            <span>$4.99</span>
+                                        </div>
+                    
+                                        <div class="wishlist-button-container js-wishListAddContainer">
+                                            <form action="/account/wishlist/add" method="POST">
+                                                <button class="btn btn-link text-black-50">
+                                                    <i class="far fa-heart"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        
+                    </div>
+                
+                </div>
+            
+            </div>
+
+            <nav aria-label="Pager">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link page-black-link" href="#" tabindex="-1"><</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link page-black-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link page-black-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link page-black-link" href="#">></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </main>
+
+    <footer class="py-4 bg-footer">
+
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#">
+                            <span class="font-size-12 fw-500 text-uppercase">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#">
+                            <span class="font-size-12 fw-500 text-uppercase">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-body" href="#">
+                            <span class="font-size-12 fw-500 text-uppercase">Privacy Policy</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="col-md-4">
+                <div>
+                    <div class="blc-brand">
+                        <p>Powered by&nbsp;</p>
+                        <img src="img/broadleaf-seal.png" alt="Broadleaf Commerce">
+                        <p>© Copyright 2013</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-4">
+                <div class="site-social-media-mobile">
+                    <a href="https://www.facebook.com/BroadleafCommerce" class="btn btn-link btn-facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/broadleaf_commerce/" class="btn btn-link btn-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://plus.google.com/111305785891011992695/posts" class="btn btn-link btn-google">
+                        <i class="fab fa-google-plus"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/broadleaf-commerce" class="btn btn-link btn-linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/broadleaf" class="btn btn-link btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/broadleafopensource" class="btn btn-link btn-youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="frameworks/bootstrap/bootstrap.bundle.js"></script> 
+
+    <script src="js/globalOnReadyEventHandlers.js"></script>
+
+</body>
+</html>
