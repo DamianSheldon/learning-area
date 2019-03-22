@@ -1,0 +1,39 @@
+.product-image-wrapper {
+    display: flex;
+}
+
+.product-page-menu-item {
+    display: block;
+    padding: 8px;
+}
+
+.product-page-menu-item img {
+    width: 100%;
+}
+
+.product-page-menu-item.active {
+    border: 1px solid #ddd;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.presentation {
+    position: absolute;
+    opacity: 0;
+}
+
+.zoom-text {
+    text-align: center;
+    font-size: 1.125rem;
+    padding-top: 0.6em;
+}
