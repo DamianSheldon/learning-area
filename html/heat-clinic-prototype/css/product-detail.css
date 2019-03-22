@@ -83,3 +83,9 @@
     font-size: 1rem;
     text-align: left;
 }
+
+.btn-login {
+    margin: 10px 1px;
+    background-color: #999999;
+    color: #FFFFFF;
+}
