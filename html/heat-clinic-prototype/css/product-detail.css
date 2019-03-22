@@ -37,3 +37,49 @@
     font-size: 1.125rem;
     padding-top: 0.6em;
 }
+
+.main-price {
+    margin: 10px 0 25px;
+}
+
+.product-social-media {
+    margin-top: 20px;
+}
+
+.product-social-media a {
+    padding: 6px;
+}
+
+.collapse-heading {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 10px 5px 0px;
+}
+
+.collapse-heading a {
+    padding: 0;
+}
+
+.collapse-heading a[aria-expanded="true"] {
+    color: #E40037;
+}
+
+.collapse-heading a[aria-expanded="false"] i {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.collapse-heading i {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
+
+.collapse-title {
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: left;
+}
