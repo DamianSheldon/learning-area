@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Determind which version deprecated stop function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    
+</head>
+<body>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.js"></script> -->
+    <script>
+        function isStopDeprecated() {
+            var img = document.createElement("img");
+            var $img = $(img);
+            if ($img.stop != undefined) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function whichVersionDeprecatedStop(versions) {
+
+            var script = document.getElementById('script-container');
+            if (script == null) {
+                script = document.createElement("script");
+                script.id = 'script-container';
+                script.type = "text/javascript";
+                script.onload = function () {
+                    console.log('load jquery version: ' + script.src);
+
+                    if (isStopDeprecated()) {
+                        whichVersionDeprecatedStop(null);
+                    }
+                    else {
+                        console.log('last jquery version which still has stop function :' + script.src);
+                    }
+                };
+
+                script.versions = versions;
+                script.index = 0;
+                script.baseDownloadUrl = 'https://code.jquery.com/jquery-';
+            }
+            else {
+                // unload jQuery
+                $ = null;
+                script = document.body.removeChild(script);
+                script.index++;
+            }
+
+            script.src = script.baseDownloadUrl + script.versions[script.index] + '.js';
+
+            document.body.appendChild(script);
+        }
+
+        // window.addEventListener('load', function () {
+
+        //     var versions = ['3.3.1', '3.3.0', '3.2.1', '3.2.0', '3.1.1', '3.1.0', '3.0.0'];
+        //     whichVersionDeprecatedStop(versions);
+        // });
+    </script>
+    <!-- <script id="script-container" type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+</body>
+</html>
