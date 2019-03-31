@@ -1,0 +1,16 @@
+{
+  "name": "heat-clinic-prototype",
+  "version": "1.0.0",
+  "description": "A static site demonstrate Heat Clinic Prototype.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Heat",
+    "Clinic",
+    "Prototype"
+  ],
+  "author": "Meiliang Dong <dongmeilianghy@sina.com> (https://damiansheldon.github.io)",
+  "license": "ISC"
+}
