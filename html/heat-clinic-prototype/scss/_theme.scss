@@ -1,0 +1,47 @@
+.hc-brand-color {
+    color: #E40037;
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #999999;
+}
+
+.btn-brand {
+    background-color: #E40037;
+    color: #FFFFFF;
+}
+
+.bg-footer {
+    background-color: #E5E5E5;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+/* element.class selects all elements with that class
+   .class element selects all elements that are descendants of elements that have that class.
+*/
+a.default-link {
+    color: #3C4858;
+}
+
+a:hover.default-link {
+    color: #E40037;
+    text-decoration: none;
+}
+
+a.brand-color-link {
+    color: #E40037;
+    vertical-align: middle;
+}
+
+a.brand-color-link:hover, a.brand-color-link:focus {
+    color: #3E0000;
+    text-decoration: none;
+}

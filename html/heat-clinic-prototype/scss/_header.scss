@@ -1,0 +1,40 @@
+/* Navigation bar */
+
+.px-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.brand-logo {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 120px;
+    transform: scale(1.92);
+    transition: all .4s ease-in-out;
+}
+
+.header-logo {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header.small-header .brand-logo {
+    transform: scale(1);
+}
+
+.mini-cart-item .img-container img {
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+}
+
+.mini-cart-item .mini-cart-item-name {
+    width: 17em;
+    white-space: normal;
+}
+
+.caret-off::after {
+    display: none;
+}
