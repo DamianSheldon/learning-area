@@ -12,5 +12,8 @@
     "Prototype"
   ],
   "author": "Meiliang Dong <dongmeilianghy@sina.com> (https://damiansheldon.github.io)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }
