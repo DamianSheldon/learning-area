@@ -4,7 +4,10 @@
   "description": "A static site demonstrate Heat Clinic Prototype.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npm-run-all css-compile css-prefix",
+    "css-compile": "node-sass --output-style expanded --precision 6 scss --output css",
+    "css-prefix": "postcss css --use autoprefixer --dir css"
   },
   "keywords": [
     "Heat",
