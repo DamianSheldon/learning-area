@@ -42,3 +42,4 @@ Thumbs.db
 /js/coverage/
 /node_modules/
 html/heat-clinic-prototype/node_modules/
+html/heat-clinic-prototype/build
