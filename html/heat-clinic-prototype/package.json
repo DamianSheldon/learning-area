@@ -13,6 +13,10 @@
   ],
   "author": "Meiliang Dong <dongmeilianghy@sina.com> (https://damiansheldon.github.io)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianSheldon/learning-area.git"
+  },
   "devDependencies": {
     "node-sass": "^4.11.0"
   }
