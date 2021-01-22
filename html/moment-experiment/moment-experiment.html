@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment Experiment</title>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/locale/zh-cn.min.js" charset="UTF-8"></script>
+    <script>
+        // moment.locale('zh-cn', {
+        //     weekdays: [
+        //         "星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"
+        //     ]
+        // });
+        moment.locale('zh-cn');
+        // moment.locale('zh-cn');
+        var locale = moment.locale();
+        console.log("current locale is :", locale);
+        var date = moment().format('MM月DD dddd');
+        console.log(date);
+
+        var date2 = moment().format("dddd YYYY年MM月DD日");
+        console.log(date2);
+
+        var date3 = moment().format("YYYY/MM/DD HH:mm");
+        console.log(date3);
+
+        var date4 = moment.duration(2600, 'seconds').locale('zh-cn');
+
+        console.log(date4.humanize());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
