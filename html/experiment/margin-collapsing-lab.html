@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapsing lab</title>
+    <style>
+        .block-ele,
+        .inline-block-ele {
+            margin: 16px 0;
+            background-color: red;
+            height: 60px;
+        }
+        
+        .block-ele:nth-child(2n),
+        .inline-block-ele:nth-child(2n) {
+            background-color: blue;
+        }
+        
+        .inline-block-ele {
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h4>Block level element</h4>
+
+        <div class="block-ele"></div>
+        <div class="block-ele"></div>
+    </section>
+    <section>
+        <h4>Inline block level element</h4>
+        <div class="inline-block-ele"></div>
+        <div class="inline-block-ele"></div>
+    </section>
+</body>
+
+</html>
