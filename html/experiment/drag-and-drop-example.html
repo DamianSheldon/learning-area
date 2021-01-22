@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+
+    <style>
+        .example-parent {
+            border: 2px solid #DFA612;
+            color: black;
+            display: flex;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .example-origin {
+            flex-basis: 100%;
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        .example-draggable {
+            background-color: #4AAE9B;
+            font-weight: normal;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .example-dropzone {
+            background-color: #6DB65B;
+            flex-basis: 100%;
+            flex-grow: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://www.digitalocean.com/community/tutorials/js-drag-and-drop-vanilla-js -->
+    <div class="example-parent">
+        <div class="example-origin">
+            <div id="draggable-1" class="example-draggable" draggable="true" ondragstart="onDragStart(event);">
+                draggable
+            </div>
+        </div>
+
+        <div class="example-dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+            dropzone
+        </div>
+    </div>
+
+    <script src="js/drag-and-drop-example.js"></script>
+
+</body>
+
+</html>
